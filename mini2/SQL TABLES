@@ -1,0 +1,34 @@
+DATABASE:
+
+sudo -u postgres psql
+
+
+create database loginregister;
+
+\c loginregister ;
+
+
+CREATE TABLE public.users
+(
+    user_id serial NOT NULL PRIMARY KEY,
+    first_name varchar(255),
+    last_name varchar(255),
+    email character varying(255) NOT NULL UNIQUE,
+    username character varying(255) NOT NULL,
+    password character varying(255) NOT NULL,
+    created_date date NOT NULL default CURRENT_DATE ,
+    last_login date NOT NULL
+);
+
+
+
+
+
+CREATE TABLE public.login
+(
+    login_id serial NOT NULL PRIMARY KEY,
+    username character varying(255) NOT NULL,
+    password character varying(255) NOT NULL
+    
+);
+

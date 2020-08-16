@@ -1,0 +1,30 @@
+<!DOCOTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Title</title>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <h1>GET</h1>
+    <form action="http://localhost:3010/login" 
+            method="GET" 
+            target="_blank">
+    username: <input type="text" name="username" value="">
+    password: <input type="password" name="password" value="">
+    <input type="submit" name="" value="Submit GET FORM">
+    </form>
+    <h1>POST</h1>
+    <form action="http://localhost:3010/login" 
+            method="POST" 
+            target="_blank">
+    username: <input type="text" name="username" value="">
+    password: <input type="password" name="password" value="">
+    <input type="submit" name="" value="Submit POST FORM">
+    </form>
+    <h2>Fetch</h2> 
+    username: <input type="text" name="username" id="username" value="">
+    password: <input type="password" name="password" id="password" value="">
+    <button type="button" name="button" onclick="sendData()">Fetch data</button>
+    <div id="root"></div>
+  </body>
+</html>

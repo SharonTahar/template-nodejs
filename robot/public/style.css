@@ -1,0 +1,11 @@
+container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.card {
+    border: 2px dashed #000000;
+    border-radius: 15px;
+    text-align: center;
+}
